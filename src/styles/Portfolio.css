@@ -1,0 +1,62 @@
+.portfolio {
+  background-color: var(--bg-alt);
+  padding: 100px 40px;
+  text-align: center;
+}
+
+.portfolio h2 {
+  color: var(--heading-color);
+  margin-bottom: 50px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border-radius: 10px;
+  padding: 25px 25px;
+  align-content: center;
+  position: relative;
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+  border: 1px solid transparent;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  border-color: var(--accent-color);
+}
+
+
+.icon {
+  color: var(--accent-color);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.card h3 {
+  color: var(--heading-color);
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: var(--text-color);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

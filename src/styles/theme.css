@@ -1,0 +1,63 @@
+:root {
+  --bg-color: #2b2e31;
+  --bg-alt: #313437;
+  --bg-card: #35383c;
+  --heading-color: #c9a35f;
+  --text-color: #b8b8b8;
+  --accent-color: #c9a35f;
+  --font-heading: Georgia, 'Times New Roman', serif;
+  --font-body: Arial, Helvetica, sans-serif;
+}
+
+body, .navbar, .hero, .about, nav a, .btn {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+.light-mode {
+  --bg-color: #F7F4EE;
+  --bg-alt: #EFEAE0;
+  --bg-card: #ffffff;
+  --heading-color: #25221F;
+  --text-color: #6F6860;
+  --accent-color: #B88924;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  line-height: 1.2;
+  letter-spacing: -0.3px;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+body, p, a, button {
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+p {
+  line-height: 1.7;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
