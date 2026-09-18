@@ -36,18 +36,11 @@ function Hero(){
                 </div>
 
                 <div className="hero-visual">
-                    <div className='circle-1'></div>
-                    <div className='circle-2'></div>
-
                     <img
                         src={logo}
                         alt="Muncha Holdings Logo"
                         className="hero-logo"
                     />
-
-                    <div className='hero-dot dot-1'></div>
-                    <div className='hero-dot dot-2'></div>
-
                 </div>
 
             </div>
