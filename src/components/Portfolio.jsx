@@ -20,7 +20,7 @@ function Portfolio(){
                 </div>
                 <div className="card">
                     <FiZap className="icon" />
-                    <h3>Hydropower & Solar Power Plants</h3>
+                    <h3>Hydropower</h3>
                     <p>Generating clean power for Nepal.</p>
                 </div>
                 <div className="card">
