@@ -11,9 +11,10 @@
 
 .approach .section-label {
     color: var(--accent-color);
-    font-size: 13px;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  margin-bottom: 16px;
 }
 
 .approach-header h2 {
