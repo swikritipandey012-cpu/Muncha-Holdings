@@ -1,6 +1,7 @@
 .contact {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: 60px;
   background-color: var(--bg-color);
   padding: 100px 60px;
@@ -28,29 +29,22 @@
   flex: 1;
   min-width: 250px;
   display: flex;
-  flex-direction: column;
-  gap: 18px;
+  justify-content: flex-end;
 }
 
-.contact-item .contact-icon {
-  color: var(--accent-color);
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-  display: block;
-}
-
-.contact-item {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-
-.contact-item a, .contact-item span {
-  color: var(--text-color);
+.contact-cta {
+  display: inline-block;
+  padding: 16px 36px;
+  border: 1px solid var(--heading-color);
+  color: var(--heading-color);
   text-decoration: none;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s;
 }
 
-.contact-item a:hover {
-  color: var(--accent-color);
+.contact-cta:hover {
+  background: var(--heading-color);
+  color: var(--bg-color);
 }
