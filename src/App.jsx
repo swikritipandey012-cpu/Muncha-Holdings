@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Story from './components/Story';
 import Portfolio from './components/Portfolio';
+import Approach from './components/Approach';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import './styles/theme.css';
@@ -25,13 +26,21 @@ function App(){
 
   return(
     <div className={`app-wrapper ${isLight ? 'light-mode' : ''}`}>
-      <Navbar isLight={isLight} onToggle={() => setIsLight(!isLight)}/>
-      <Hero/>
-      <Story/>
-      <Portfolio/>
-      <Contact/>
-      <Footer/>
+
+      <Navbar
+        isLight={isLight}
+        onToggle={() => setIsLight(!isLight)}
+      />
+
+      <Hero />
+      <Story />
+      <Portfolio />
+      <Approach />
+      <Contact />
+      <Footer />
+
     </div>
   );
 }
+
 export default App;

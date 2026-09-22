@@ -1,50 +1,73 @@
 .contact {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 60px;
-  background-color: var(--bg-color);
-  padding: 100px 60px;
-  max-width: 1000px;
-  margin: 0 auto;
-  flex-wrap: wrap;
+    padding: 100px 8%;
+    background: var(--bg-color);
 }
 
-.contact-left {
-  flex: 1;
-  min-width: 250px;
-  text-align: left;
-}
-
-.contact-left h2 {
+.section-label{
   color: var(--heading-color);
-  margin-bottom: 12px;
+  font-family: var(--font-heading);
+  text-align: center;
 }
 
-.contact-left .desc {
-  color: var(--text-color);
+.contact h2 {
+    color: var(--heading-color);
+    font-family: var(--font-heading);
+    font-size: 38px;
+    margin: 20px 35px;
+    text-align: center;
 }
 
-.contact-right {
-  flex: 1;
-  min-width: 250px;
-  display: flex;
-  justify-content: flex-end;
+.contact-form {
+    max-width: 850px;
+    margin: auto;
 }
 
-.contact-cta {
-  display: inline-block;
-  padding: 16px 36px;
-  border: 1px solid var(--heading-color);
-  color: var(--heading-color);
-  text-decoration: none;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  transition: all 0.3s;
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
 
-.contact-cta:hover {
-  background: var(--heading-color);
-  color: var(--bg-color);
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid rgba(201, 163, 95, 0.35);
+    background: var(--bg-card);
+    color: var(--text-color);
+    font-family: var(--font-body);
+}
+
+.contact-form select {
+    appearance: auto;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+}
+
+.contact-form button {
+    padding: 14px 25px;
+    border: 1px solid var(--accent-color);
+    background: var(--accent-color);
+    color: #242424;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact h2 {
+        font-size: 30px;
+    }
 }

@@ -3,6 +3,7 @@ import { FiSend, FiHome, FiZap, FiDroplet, FiBox, FiSun } from 'react-icons/fi';
 
 function Portfolio(){
     return(
+        <section id='portfolio'>
         <div className="portfolio reveal" id="portfolio">
             <h2>Our Diverse Portfolio</h2>
             <div className="cards">
@@ -41,6 +42,7 @@ function Portfolio(){
                 </div>
             </div>
         </div>
+        </section>
     );
 }
 

@@ -3,6 +3,7 @@ import '../styles/Hero.css';
 
 function Hero(){
     return(
+        <section id='home'>
         <div className="hero" id="home">
             <div className='hero-content'>
                 <div className='hero-text'>
@@ -11,7 +12,7 @@ function Hero(){
                     </p>
 
                     <h1>
-                        Buiding Across<br/>
+                        Building Across<br/>
                     <span>Industries.</span>
                     </h1>
 
@@ -45,6 +46,7 @@ function Hero(){
 
             </div>
         </div>
+        </section>
     );
 }
 export default Hero;

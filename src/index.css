@@ -7,3 +7,12 @@
 body {
   background-color: var(--bg-color);
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 140px;
+  scroll-margin-bottom:200px ;
+}

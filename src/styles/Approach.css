@@ -1,0 +1,118 @@
+.approach {
+    padding: 100px 8%;
+    background: var(--bg-alt);
+}
+
+.approach-header {
+    max-width: 780px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.approach .section-label {
+    color: var(--accent-color);
+    font-size: 13px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.approach-header h2 {
+    color: var(--heading-color);
+    margin: 0 0 20px;
+}
+
+.approach-description {
+    max-width: 680px;
+    margin: auto;
+    color: var(--text-color);
+}
+
+.approach-points {
+    max-width: 1050px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.approach-item {
+    padding: 10px 40px;
+}
+
+.approach-item:first-child {
+    padding-left: 0;
+}
+
+.approach-item:last-child {
+    padding-right: 0;
+}
+
+.approach-item + .approach-item {
+    border-left: 1px solid rgba(201, 163, 95, 0.25);
+}
+
+.approach-item h3 {
+    color: var(--heading-color);
+    margin: 0 0 12px;
+}
+
+.approach-item p {
+    color: var(--text-color);
+    margin: 0;
+}
+
+
+/* Animation */
+
+.approach .approach-header,
+.approach .approach-item {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.approach.visible .approach-header,
+.approach.visible .approach-item {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.approach.visible .approach-item:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.approach.visible .approach-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.approach.visible .approach-item:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .approach {
+        padding: 75px 7%;
+    }
+
+    .approach-header h2 {
+        font-size: 30px;
+    }
+
+    .approach-points {
+        grid-template-columns: 1fr;
+    }
+
+    .approach-item,
+    .approach-item:first-child,
+    .approach-item:last-child {
+        padding: 25px 0;
+    }
+
+    .approach-item + .approach-item {
+        border-left: none;
+        border-top: 1px solid rgba(201, 163, 95, 0.25);
+    }
+}

@@ -1,16 +1,60 @@
-import '../styles/Contact.css';
+import "../styles/Contact.css";
 
-function Contact(){
-    return(
-        <div className="contact reveal" id="contact">
-            <div className="contact-left">
-                <h2>Let's Connect</h2>
-                <p className="desc">Reach out to Muncha Holdings for business inquiries.</p>
-            </div>
-            <div className="contact-right">
-                <a href="mailto:shubhanjan@munchaholdings.com" className="contact-cta">Send an Email →</a>
-            </div>
-        </div>
+function Contact() {
+    return (
+        <section className="contact" id="contact">
+            <p className="section-label">CONTACT US</p>
+
+            <h2>Let's start a conversation.</h2>
+
+            <form className="contact-form">
+                <div className="form-row">
+                    <input
+                        type="text"
+                        placeholder="Your Name"
+                        required
+                    />
+
+                    <input
+                        type="email"
+                        placeholder="Email Address"
+                        required
+                    />
+                </div>
+
+                <select required defaultValue="">
+                    <option value="" disabled>
+                        Select Inquiry Type
+                    </option>
+
+                    <option value="general">
+                        General Corporate Inquiry
+                    </option>
+
+                    <option value="energy">
+                        Energy & Infrastructure Partnerships
+                    </option>
+
+                    <option value="supply">
+                        Supply Chain & B2B Purchasing
+                    </option>
+
+                    <option value="career">
+                        Career & Job Openings
+                    </option>
+                </select>
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Send Inquiry →
+                </button>
+            </form>
+        </section>
     );
 }
 

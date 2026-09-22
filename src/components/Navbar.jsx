@@ -43,9 +43,11 @@ function Navbar({ isLight, onToggle }) {
 
                 <a href="#home">Home</a>
 
+                <a href="#about">About Us</a>
+
                 <a href="#portfolio">Portfolio</a>
 
-                <a href="#about">About Us</a>
+                <a href="#approach">Approach</a>
 
                 <a href="#contact">Contact</a>
 
